@@ -1,0 +1,14 @@
+<h1>Leader Board</h1>
+<table width="50%">
+  <tr>
+    <th align="left">Name</th>
+    <th align="left">Points</th>
+  </tr>
+
+  <% @scores.each do |name, points|%>
+  <tr>
+    <td align="left"><%= name %></td>
+    <td align="left"><%= points %></td>
+  </tr>
+  <% end %>
+</table>
